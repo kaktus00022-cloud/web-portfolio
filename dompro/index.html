@@ -1,3 +1,38 @@
 <!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ДомПро — ремонт и интерьер</title><style>
 *{box-sizing:border-box}body{margin:0;background:#f4f5f0;color:#26352d;font:15px/1.6 Arial,sans-serif}a{text-decoration:none;color:inherit}.wrap{max-width:1160px;margin:auto;padding:0 28px}.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;font-size:23px;letter-spacing:-1px}.logo span{color:#7d9a72}.nav a:last-child,.btn{background:#294537;color:white;padding:13px 20px;border-radius:4px}.hero{background:#dce5d9;padding:75px 0;overflow:hidden}.hero-in{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.label{text-transform:uppercase;letter-spacing:2px;font-size:11px;color:#68806a}.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-3px;margin:18px 0}.hero p{max-width:450px;color:#586a5c}.room{height:400px;background:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85') center/cover;position:relative;box-shadow:inset 0 0 0 16px #ffffff30}.room:before{display:none;content:"";position:absolute;left:15%;bottom:0;width:70%;height:45%;background:#b5a58f;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}.room:after{display:none;content:"";position:absolute;left:39%;top:15%;width:28%;height:48%;background:#f6f4ed;box-shadow:0 0 0 9px #ffffff70}.section{padding:70px 0}.section h2{font-size:40px;letter-spacing:-2px;margin:8px 0 28px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;padding:25px;border-radius:8px}.card b{font-size:21px}.card p{color:#718076;font-size:14px}.numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;background:#294537;color:white;padding:35px;border-radius:8px}.numbers strong{font-size:36px}.numbers span{display:block;color:#c2d0c3;font-size:13px}.process{display:grid;grid-template-columns:1fr 1fr;gap:35px}.process li{padding:12px 0;border-bottom:1px solid #d5dbd2}.contact{background:#dce5d9;padding:60px;text-align:center;border-radius:8px}.contact h2{font-size:42px;margin:10px}footer{padding:25px 0;color:#78857b;font-size:12px}@media(max-width:700px){.hero-in,.process{grid-template-columns:1fr}.room{height:260px}.cards{grid-template-columns:1fr}.numbers{grid-template-columns:1fr}.contact{padding:35px 20px}.nav{height:auto;padding:18px 0;gap:12px}.nav a:last-child{font-size:12px}}
+
+/* Адаптация */
+img{max-width:100%;height:auto}
+@media(max-width:900px){
+ .wrap{padding-left:22px;padding-right:22px}
+ .hero-in{gap:28px}
+ .hero h1{font-size:clamp(40px,6.5vw,60px)}
+ .room{height:340px}
+ .cards{gap:12px}
+ .card{padding:20px}
+ .numbers{padding:27px}
+}
+@media(max-width:600px){
+ .wrap{padding-left:16px;padding-right:16px}
+ .nav{height:auto;min-height:68px;padding:14px 0;flex-wrap:wrap;gap:12px}
+ .nav>span{display:none}
+ .nav a:last-child{margin-left:auto;font-size:12px;padding:11px 13px}
+ .hero{padding:0}
+ .hero-in{grid-template-columns:1fr;padding-top:42px;padding-bottom:42px;gap:24px}
+ .hero h1{font-size:clamp(39px,11vw,55px);letter-spacing:-1.5px}
+ .room{height:clamp(230px,70vw,300px)}
+ .section{padding:46px 0}
+ .section h2{font-size:clamp(30px,9vw,38px);line-height:1.1;letter-spacing:-1px}
+ .section>div[style*="grid-template-columns:repeat(3"]{grid-template-columns:1fr 1fr!important}
+ .section>div[style*="grid-template-columns:repeat(3"] img{height:160px!important}
+ .cards{grid-template-columns:1fr}
+ .numbers{grid-template-columns:repeat(3,minmax(0,1fr));padding:20px 14px;gap:8px}
+ .numbers strong{font-size:clamp(25px,8vw,32px)}
+ .numbers span{font-size:11px;line-height:1.35}
+ .process{grid-template-columns:1fr;gap:15px}
+ .contact{padding:34px 18px}
+ .contact h2{font-size:clamp(31px,9vw,40px)}
+}
+@media(max-width:380px){.numbers{grid-template-columns:1fr}.numbers>div{display:flex;align-items:center;gap:14px}.numbers strong{min-width:32px}}
+
 </style></head><body><div class="wrap"><nav class="nav"><div class="logo">ДОМ<span>ПРО</span></div><span>РЕМОНТ · ДИЗАЙН · УЮТ</span><a href="#contact">Рассчитать проект</a></nav></div><header class="hero"><div class="wrap hero-in"><div><div class="label">Ремонт с понятным результатом</div><h1>Пространство,<br>в котором<br>хочется жить.</h1><p>Помогаем пройти путь от идеи до готового интерьера: планирование, материалы, работы и контроль каждого этапа.</p><a class="btn" href="#contact">Обсудить проект ↗</a></div><div class="room"></div></div></header><main class="wrap"><section class="section"><div class="label">Наши проекты</div><h2>Интерьеры, которые вдохновляют</h2><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 42px"><img style="width:100%;height:220px;object-fit:cover;border-radius:8px" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=85" alt="Светлая гостиная"><img style="width:100%;height:220px;object-fit:cover;border-radius:8px" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=85" alt="Современная гостиная"><img style="width:100%;height:220px;object-fit:cover;border-radius:8px" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=85" alt="Интерьер кухни"></div><div class="label">Наши направления</div><h2>Всё для вашего пространства</h2><div class="cards"><article class="card"><b>01 / Под ключ</b><p>Комплексный ремонт квартиры с единым планом и ответственным специалистом.</p></article><article class="card"><b>02 / Дизайн</b><p>Функциональные планировки, подбор материалов и визуальная концепция.</p></article><article class="card"><b>03 / Отделка</b><p>Отдельные виды работ, аккуратное исполнение и прозрачная смета.</p></article></div></section><section class="section"><div class="numbers"><div><strong>1</strong><span>понятная смета</span></div><div><strong>1</strong><span>команда на проект</span></div><div><strong>0</strong><span>скрытых доплат в концепции</span></div></div></section><section class="section process"><div><div class="label">Как мы работаем</div><h2>От первого разговора до ключей</h2><p>Каждый этап согласовывается заранее. Вы понимаете, что происходит, сколько это стоит и что будет дальше.</p></div><ol><li>Знакомство и замер</li><li>План работ и смета</li><li>Договор и подготовка</li><li>Ремонт и контроль</li><li>Приёмка результата</li></ol></section><section class="section" id="contact"><div class="contact"><div class="label">Начнём с вашей идеи</div><h2>Расскажите о проекте</h2><p>Оставьте сообщение, и мы обсудим задачи и ориентировочную стоимость.</p><a class="btn" href="https://t.me/" target="_blank">Написать нам</a></div></section></main><footer class="wrap">ДЕМО-ПРОЕКТ · ДОМПРО · Компания, цифры и предложения вымышлены</footer></body></html>
